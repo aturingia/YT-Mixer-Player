@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mi Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    
+    <div class="header">
+      
+      <div class="logotipo">
+        <img src="https://github.com/aturingia/YT-Mixer-Player/blob/main/img/logo.png?raw=true" alt="logo" width="70px" height="70px">
+        <h1>YT Mixer Player</h1>
+      </div>
+      
+      <button onclick="myFunction()">Dark mode</button>
+      
+    </div>
+    
+    <div class="mixer-container">
+      
+      <div class="player">
+        
+        <div class="player-A">
+        <h3 class="titulo-A">Player A</h3>
+	      <div id="video1"></div>
+      </div>
+      
+        <div class="player-B">
+        <h3 class="titulo-B">Player B</h3>
+        <div id="video2"></div>
+      </div>
+        
+      </div>
+      
+      <div id="volumeControl" class="nav-control">
+        
+        <h3>Fader</h3>
+        <div class="nav-fader">
+        
+          <figure class="player__A">A</figure>
+        
+          <input type="range" min="0" max="100" value="50" class="slider" id="volumeSlider">
+        
+          <figure class="player__B">B</figure>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="footer"></div>
+    
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
